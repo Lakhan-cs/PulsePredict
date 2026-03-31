@@ -1,0 +1,106 @@
+/* =========================================
+   Base & Reset Styles
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f4f7f9; /* Matches the clinical off-white of the input page */
+    color: #2d3748;
+    /* Flexbox to perfectly center the result card on the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* =========================================
+   Result Card Container
+   ========================================= */
+.container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    border-top: 5px solid #0b5c8f; /* Adds a nice medical accent line at the top */
+}
+
+h2 {
+    color: #0b5c8f;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   Prediction Output Box (Alert)
+   ========================================= */
+.alert {
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.alert-info {
+    background-color: #ebf8ff; /* Soft, calming blue background */
+    color: #2b6cb0; /* Deep blue text for contrast and readability */
+    border: 1px solid #bee3f8;
+}
+
+/* =========================================
+   Back to Home Button
+   ========================================= */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0b5c8f;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(11, 92, 143, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #084268;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(11, 92, 143, 0.25);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 25px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .alert {
+        font-size: 1.1rem;
+        padding: 20px 15px;
+    }
+}
