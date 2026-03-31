@@ -178,13 +178,13 @@ def predict():
     # FINAL RESULT
 
     if prediction < 50:
-        result = f"Low Risk ({round(prediction,2)}%)"
+        result = f"Low Risk"
     elif prediction < 70:
-        result = f"Medium Risk ({round(prediction,2)}%)"
+        result = f"Medium Risk"
     elif prediction < 85:
-        result = f"High Risk ({round(prediction,2)}%)"
+        result = f"High Risk"
     else :
-        result = f"Very High Risk ({round(prediction,2)}%)"
+        result = f"Very High Risk"
     
 
     return render_template("lpk_output.html", result=result)
