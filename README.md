@@ -12,18 +12,18 @@ Pulse Predict is a machine learning-based web application designed to predict an
 
 * Clone the repo - /folder
 
-``` git clone <https://github.com/Lakhan-cs/PulsePredict.git>
+```git clone <https://github.com/Lakhan-cs/PulsePredict.git>
 ```
 
 * Create new enviroments - cmd (predictenv)
 
-``` conda create -p predictenv python==3.12.7 -y
+```conda create -p predictenv python==3.12.7 -y
 conda activate predictenv
 ```
 
 * Install the library from requirements.txt
 
-``` pip install -r requirements.txt
+```pip install -r requirements.txt
 ```
 
 ## Features
